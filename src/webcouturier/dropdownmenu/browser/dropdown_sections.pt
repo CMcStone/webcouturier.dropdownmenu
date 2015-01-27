@@ -10,7 +10,7 @@
                          subitems python:view.getTabObject(tabUrl = tab['url'], tabPath = tab.get('path'));
                          item_clickable python:view.enable_parent_clickable or not subitems"
              tal:attributes="id string:portaltab-${tid};
-                             class python:selected_tab==tid and 'selected has-dropdown not-click' or 'plaon has-dropdown not-click'"
+                             class python:selected_tab==tid and 'selected has-dropdown not-click' or 'plain has-dropdown not-click'"
             ><a href=""
                tal:content="tab/name"
                tal:attributes="href tab/url;
