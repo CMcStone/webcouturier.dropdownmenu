@@ -47,6 +47,9 @@ ul.submenu {
     display:block;
     width:100%;
 }
+#portal-globalnav ul.submenu a:hover{
+color:#fff !important}
+
 #portal-globalnav ul.submenu a,
 #portal-globalnav ul.submenu a:hover {
     margin:0;
