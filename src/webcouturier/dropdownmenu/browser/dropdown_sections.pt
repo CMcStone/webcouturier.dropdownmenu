@@ -19,7 +19,7 @@
                 <a tal:condition="not:item_clickable"
                    class="mainTabContent"
                    tal:content="tab/name"
-                   tal:attributes="title tab/description|nothing">
+           
                   <tal:comment replace="nothing">Tab Name</tal:comment>
                 </a>
                 <tal:block tal:condition="subitems">
