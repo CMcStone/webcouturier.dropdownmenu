@@ -43,6 +43,10 @@ ul.submenu li {
   padding:0.5em 1.5em 0.5em 1em;
   width:12em;
   }
+#portal-globalnav ul.submenu a.state-active:hover {
+   background-color:#808080 !important;
+	}
+  
 ul.submenu ul {
   top:0;
   left:100%;
