@@ -43,6 +43,12 @@ ul.submenu {
     border-style: none solid solid solid;
     margin:0;
 }
+#portal-globalnav li.selected :hover{
+	background-color: #4C4C4C !important;
+	}
+#portal-globalnav li.selected a{
+	color:#fff !important;
+	}
 #portal-globalnav li.selected ul.submenu {
     margin-top:-1px;
     z-index:3;
@@ -64,7 +70,7 @@ color:#fff !important}
     white-space:normal;
 }
 #portal-globalnav li.selected ul.submenu a:hover {
-    background-color:#fff;
+    background-color:#4C4C4C;
 }
 
 a.hasDropDown {
