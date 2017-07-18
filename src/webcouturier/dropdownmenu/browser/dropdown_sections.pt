@@ -22,7 +22,7 @@
 			</a>
 			<div>
 			<tal:block tal:condition="subitems">
-                <ul class="submenu">
+                <ul class="submenu firstlevel">
                     <tal:subitems tal:replace="structure subitems">
                         <tal:comment replace="nothing">Submenu</tal:comment>
                     </tal:subitems>

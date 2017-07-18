@@ -14,11 +14,14 @@
                 item_url        node/getURL;
                 item_icon       nocall:node/item_icon;
                 item_type       node/portal_type;
+					 has_children    nocall:children;
                 normalizeString nocall: context/plone_utils/normalizeString;"
+	 tal:attributes="class python:has_children and 'has-dropdown' or ''"
     tal:condition="python:bottomLevel &lt;= 0 or level &lt;= bottomLevel">
+	
 
     <tal:level define="has_children nocall:children;
-                       children_class python:has_children and ' hasDropDown accessible-megamenu-panel-group ' or '';
+                       children_class python:has_children and ' hasDropDown ' or '';
                        item_class string:state-${node/normalized_review_state}${children_class};
                        item_clickable python:enable_parent_clickable or not has_children;">
 
