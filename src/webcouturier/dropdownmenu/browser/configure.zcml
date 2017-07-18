@@ -9,6 +9,12 @@
         name="dropdown-menu.js"
         file="dropdown.js"
         />
+		  
+   <browser:resource
+       name="jquery-accessibleNNegaMenu.js"
+       file="jquery-accessibleMegaMenu.js"
+       />
+	
 
     <!-- Override global sections viewlet -->
     <browser:viewlet

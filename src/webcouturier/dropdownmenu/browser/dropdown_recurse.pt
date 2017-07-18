@@ -18,13 +18,14 @@
     tal:condition="python:bottomLevel &lt;= 0 or level &lt;= bottomLevel">
 
     <tal:level define="has_children nocall:children;
-                       children_class python:has_children and ' hasDropDown' or '';
+                       children_class python:has_children and ' hasDropDown accessible-megamenu-panel-group ' or '';
                        item_class string:state-${node/normalized_review_state}${children_class};
                        item_clickable python:enable_parent_clickable or not has_children;">
 
         <a tal:attributes="href python:item_url;
                            title node/Description;
-                           class python:item_clickable and item_class or item_class + ' noClick'">
+                           class python:item_clickable and item_class or item_class + ' noClick';
+									">
             <img tal:replace="structure item_icon/html_tag" />
             <span tal:replace="node/Title">Selected Item Title</span>
         </a>
