@@ -4,14 +4,14 @@
     <h5 class="hiddenStructure" i18n:translate="heading_sections">Sections</h5>
 	 <div class="LayoutGrid LayoutCenter PanelDiffuseShadow PanelFillExtraLight">
     <nav class="megamenu">
-    <ul id="portal-globalnav"
+    <ul id="portal-globalnav" class="nav-menu"
         tal:define="selected_tab python:view.selected_portal_tab"
         ><tal:tabs tal:repeat="tab portal_tabs"
         ><li tal:define="tid tab/id;
                          subitems python:view.getTabObject(tabUrl = tab['url'], tabPath = tab.get('path'));
                          item_clickable python:view.enable_parent_clickable or not subitems"
              tal:attributes="id string:portaltab-${tid};
-                             class python:selected_tab==tid and 'selected' or 'plain'"
+                             class python:selected_tab==tid and 'selected nav-item' or 'plain nav-item'"
             ><a href=""
                tal:content="tab/name"
                tal:attributes="href tab/url;
@@ -20,9 +20,9 @@
 										 role  python:'button';">
             Tab Name
 			</a>
-			<div>
+			<div class="sub-nav">
 			<tal:block tal:condition="subitems">
-                <ul class="submenu firstlevel">
+                <ul class="submenu firstlevel sub-nav-group">
                     <tal:subitems tal:replace="structure subitems">
                         <tal:comment replace="nothing">Submenu</tal:comment>
                     </tal:subitems>

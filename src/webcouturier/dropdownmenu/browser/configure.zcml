@@ -11,7 +11,7 @@
         />
 		  
    <browser:resource
-       name="jquery-accessibleNNegaMenu.js"
+       name="jquery-accessibleMegaMenu.js"
        file="jquery-accessibleMegaMenu.js"
        />
 	
